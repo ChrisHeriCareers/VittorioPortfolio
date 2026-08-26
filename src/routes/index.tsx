@@ -7,7 +7,7 @@ import leadershipImage from "@/assets/expertise-leadership.jpg";
 import technologyImage from "@/assets/expertise-technology.jpg";
 import industrializationImage from "@/assets/expertise-industrialization.jpg";
 import electrificationImage from "@/assets/expertise-electrification.jpg";
-import portraitAsset from "@/assets/portrait.jpg";
+import portraitAsset from "@/assets/portrait.jpeg";
 import cvAsset from "@/assets/cv.pdf";
 
 export const Route = createFileRoute("/")({

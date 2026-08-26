@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Award, FileDown, GraduationCap, Lightbulb, Mail, Phone } from "lucide-react";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import portraitAsset from "@/assets/portrait.jpg";
+import portraitAsset from "@/assets/portrait.jpeg";
 import cvAsset from "@/assets/cv.pdf";
 
 export const Route = createFileRoute("/about")({
