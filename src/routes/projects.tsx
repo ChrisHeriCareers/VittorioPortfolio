@@ -7,7 +7,7 @@ import technologyImage from "@/assets/expertise-technology.jpg";
 import industrializationImage from "@/assets/expertise-industrialization.jpg";
 import leadershipImage from "@/assets/expertise-leadership.jpg";
 import electrificationImage from "@/assets/expertise-electrification.jpg";
-import cvAsset from "@/assets/cv.pdf.asset.json";
+import cvAsset from "@/assets/cv.pdf";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -325,7 +325,7 @@ function ProjectsPage() {
                   Contact Vittorio
                 </a>
                 <a
-                  href={cvAsset.url}
+                  href={cvAsset}
                   download="Vittorio-Doria-CV.pdf"
                   className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary"
                 >

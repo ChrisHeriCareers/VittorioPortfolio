@@ -7,8 +7,8 @@ import leadershipImage from "@/assets/expertise-leadership.jpg";
 import technologyImage from "@/assets/expertise-technology.jpg";
 import industrializationImage from "@/assets/expertise-industrialization.jpg";
 import electrificationImage from "@/assets/expertise-electrification.jpg";
-import portraitAsset from "@/assets/portrait.jpg.asset.json";
-import cvAsset from "@/assets/cv.pdf.asset.json";
+import portraitAsset from "@/assets/portrait.jpg";
+import cvAsset from "@/assets/cv.pdf";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -123,7 +123,7 @@ function HomePage() {
                   <ArrowRight className="size-4" aria-hidden="true" />
                 </Link>
                 <a
-                  href={cvAsset.url}
+                  href={cvAsset}
                   download="Vittorio-Doria-CV.pdf"
                   className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary"
                 >
@@ -136,7 +136,7 @@ function HomePage() {
             <div className="relative mx-auto w-full max-w-sm">
               <div className="absolute -inset-3 -z-10 rounded-lg border border-primary/25" />
               <img
-                src={portraitAsset.url}
+                src={portraitAsset}
                 alt="Portrait of Vittorio Doria, global powertrain executive"
                 width={640}
                 height={720}
