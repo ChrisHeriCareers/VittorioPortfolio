@@ -137,7 +137,7 @@ function HomePage() {
               <div className="absolute -inset-3 -z-10 rounded-lg border border-primary/25" />
               <img
                 src={portraitAsset}
-                alt="Portrait of Vittorio Doria, global powertrain executive"
+                alt="Portrait of Vittorio Doria"
                 width={640}
                 height={720}
                 loading="lazy"

@@ -2,8 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Award, FileDown, GraduationCap, Lightbulb, Mail, Phone } from "lucide-react";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import portraitAsset from "@/assets/portrait.jpg.asset.json";
-import cvAsset from "@/assets/cv.pdf.asset.json";
+import portraitAsset from "@/assets/portrait.jpg";
+import cvAsset from "@/assets/cv.pdf";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -180,11 +180,11 @@ function AboutPage() {
               <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
                 <p>
                   Vittorio Doria is a global powertrain executive with more than thirty years of
-                  experience taking engine technology from advanced research into series production —
-                  and keeping it competitive across its full commercial life. A mechanical engineer
-                  from Politecnico di Torino, he has led programs across Europe, South America, North
-                  America and Asia, and today owns four base engine families producing 1.22 million
-                  units a year.
+                  experience taking engine technology from advanced research into series production
+                  — and keeping it competitive across its full commercial life. A mechanical
+                  engineer from Politecnico di Torino, he has led programs across Europe, South
+                  America, North America and Asia, and today owns four base engine families
+                  producing 1.22 million units a year.
                 </p>
                 <p>
                   His authority is built on depth, not distance from the work. Fifteen years inside
@@ -203,16 +203,16 @@ function AboutPage() {
                   application under review.
                 </p>
                 <p>
-                  Based in Belo Horizonte and an Italian citizen with EU work authorization, he works
-                  in Italian, Portuguese and English, and is equally at home in a Torino design
-                  review and a Brazilian plant audit.
+                  Based in Belo Horizonte and an Italian citizen with EU work authorization, he
+                  works in Italian, Portuguese and English, and is equally at home in a Torino
+                  design review and a Brazilian plant audit.
                 </p>
               </div>
             </div>
 
             <aside className="lg:sticky lg:top-24">
               <img
-                src={portraitAsset.url}
+  src={portraitAsset}
                 alt="Portrait of Vittorio Doria"
                 width={640}
                 height={720}
@@ -244,9 +244,9 @@ function AboutPage() {
               <p>
                 Four distinct phases define this career. Research and technology creation at Centro
                 Ricerche Fiat. Chief engineer program leadership at FPT, where award-winning engines
-                reached market. Global platform and organizational leadership at FPT and FCA, scaling
-                delivery across continents. And executive portfolio ownership at Stellantis, where
-                technology strategy, regulatory compliance and industrial economics converge.
+                reached market. Global platform and organizational leadership at FPT and FCA,
+                scaling delivery across continents. And executive portfolio ownership at Stellantis,
+                where technology strategy, regulatory compliance and industrial economics converge.
               </p>
               <p>
                 The through-line is accountability for outcomes that can be counted: units produced,
@@ -323,8 +323,8 @@ function AboutPage() {
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Two granted patents in powertrain technology, with a further application under
-                review. Contributed to the production implementation of MultiAir fully variable valve
-                actuation.
+                review. Contributed to the production implementation of MultiAir fully variable
+                valve actuation.
               </p>
             </div>
 
@@ -371,7 +371,9 @@ function AboutPage() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="panel p-8">
               <p className="eyebrow">Professional philosophy</p>
-              <h2 className="mt-4 font-display text-2xl font-bold">Technology only counts once it ships</h2>
+              <h2 className="mt-4 font-display text-2xl font-bold">
+                Technology only counts once it ships
+              </h2>
               <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground">
                 <p>
                   An engine concept is a hypothesis. It becomes engineering when it survives
@@ -380,10 +382,10 @@ function AboutPage() {
                   model and the manufacturing constraint on the same table.
                 </p>
                 <p>
-                  I also believe organizations deliver what their structure allows. When results lag,
-                  the answer is usually clearer ownership, tighter governance and better-developed
-                  people — not more reporting. Build the team, define the decision rights, then hold
-                  the line on quality.
+                  I also believe organizations deliver what their structure allows. When results
+                  lag, the answer is usually clearer ownership, tighter governance and
+                  better-developed people — not more reporting. Build the team, define the decision
+                  rights, then hold the line on quality.
                 </p>
               </div>
             </div>
@@ -414,7 +416,7 @@ function AboutPage() {
                 formatted for executive search and hiring committees.
               </p>
               <a
-                href={cvAsset.url}
+                href={cvAsset}
                 download="Vittorio-Doria-CV.pdf"
                 className="mt-7 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
