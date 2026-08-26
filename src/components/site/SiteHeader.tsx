@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, FileDown } from "lucide-react";
-import cvAsset from "@/assets/cv.pdf.asset.json";
+import cvAsset from "@/assets/cv.pdf";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -36,7 +36,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <a
-            href={cvAsset.url}
+            href={cvAsset}
             download="Vittorio-Doria-CV.pdf"
             className="ml-3 inline-flex items-center gap-2 rounded-md border border-primary/40 px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
           >
@@ -71,7 +71,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <a
-              href={cvAsset.url}
+              href={cvAsset}
               download="Vittorio-Doria-CV.pdf"
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-md border border-primary/40 px-4 py-3 text-sm font-semibold text-primary"
             >
